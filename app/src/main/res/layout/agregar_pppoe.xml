@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dialog_body"
+    android:background="@android:color/white">
+
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+
+        android:textColor="#000000"
+        android:text="Registrar cliente"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/padding_between"
+        android:layout_marginTop="@dimen/padding_between"
+        android:background="#C8C9CB" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUsuario"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/padding_between"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:hint="Nombre"
+            android:padding="@dimen/edit_text_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:inputType="textPersonName|textCapWords" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/padding_between"
+            android:layout_marginTop="@dimen/normal_padding"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:hint="Clave"
+            android:padding="@dimen/edit_text_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:inputType="textPassword" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/chkMostrarClave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPassword"
+        android:layout_alignStart="@+id/txtPassword"
+        android:layout_below="@+id/txtPassword"
+        android:checked="false"
+        android:text="Mostrar clave" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chkMostrarClave"
+        android:layout_alignStart="@+id/chkMostrarClave"
+        android:layout_below="@+id/chkMostrarClave"
+        android:layout_marginBottom="@dimen/padding_between"
+        android:layout_marginTop="@dimen/normal_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil:"
+            android:id="@+id/textView6"
+            android:layout_weight="1"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spPerfil"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnRegistrarPPPOE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/button_padding"
+            android:paddingTop="@dimen/button_padding"
+            android:text="Registrar"
+            android:textColor="@android:color/white"
+            android:background="@color/buttonColor" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

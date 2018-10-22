@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mikrotik</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="searchable">Buscador</string>
+    <string name="menu_search">Buscar</string>
+    <string name="adduser">Agregar Usuario</string>
+    <string name="refresh">Refrescar lista</string>
+    <string name="addserver">Agregar Servidor</string>
+</resources>

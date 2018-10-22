@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adduser xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="@string/adduser"
+    android:hint="@string/adduser">
+
+</adduser>
